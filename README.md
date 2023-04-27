@@ -1,6 +1,21 @@
 # Detección de objetos - RCNN
 Basado en [20211025_Custom_Object_Detection_using_PyTorch_Faster_RCNN](https://debuggercafe.com/custom-object-detection-using-pytorch-faster-rcnn/)
 
+
+## Entorno
+```
+conda create --name object_detection python=3.10.11
+```
+
+```
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+## Uses
+Sellos
+
+
 ## Notas
 
 ### Image annotation tools (labeling) 
@@ -17,7 +32,9 @@ Sovit Ranjan Rath October 25, 2021
 Sovit Ranjan Rath April 4, 2022 _(no probada)_
 
 ### Desarrollo local
-Versión sellos (depreciated)```.\Proyectos\20211025_Custom_Object_Detection_using_PyTorch_Faster_RCNN```
+Versión sellos (depreciated) ```.\Proyectos\20211025_Custom_Object_Detection_using_PyTorch_Faster_RCNN```
+
+
 Versión actual ```.\Proyectos\object_detection_COD```
 
 ### Google Colab Notebook
