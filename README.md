@@ -1,0 +1,2 @@
+# object_detection_COD
+Basado en 20211025_Custom_Object_Detection_using_PyTorch_Faster_RCNN
