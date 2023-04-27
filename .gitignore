@@ -1,3 +1,31 @@
+##################
+# Propios
+##################
+
+/src/**/*.*log
+/src/**/*.log
+
+# pesos sinápticos
+/src/**/*.pt
+/src/**/*.pth
+
+/outputs/*.pt
+/outputs/*.pth
+
+*.pt*
+*.xml
+*.tiff
+*.jpg
+*.png
+
+/outputs/
+/test_data
+/test_prediction
+
+####################################
+### From templates 
+### https://github.com (Python)
+####################################
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
