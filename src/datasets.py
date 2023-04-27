@@ -10,8 +10,8 @@ from torch.utils.data import Dataset, DataLoader
 from utils import collate_fn, get_train_transform, get_valid_transform
 
 # the dataset class
-class SellosLatDataset(Dataset):
-    def __init__(self, dir_path, width, height, classes, transforms=None, exclude=[]):
+class ImagesDataset(Dataset):
+    def __init__(self, dir_path, width, height, classes, image_format="tiff", transforms=None, exclude=[]):
         self.transforms = transforms
         self.dir_path = dir_path
         self.height = height
@@ -20,7 +20,7 @@ class SellosLatDataset(Dataset):
         self.exclude = exclude
         
         # get all the image paths in sorted order
-        self.image_paths = glob.glob(f"{self.dir_path}/*.tiff")
+        self.image_paths = glob.glob(f"{self.dir_path}/*.{image_format}")
         self.all_images = [image_path.split('/')[-1].split('\\')[-1] for image_path in self.image_paths]
         self.all_images = sorted(self.all_images)
 
@@ -37,7 +37,7 @@ class SellosLatDataset(Dataset):
         image_resized /= 255.0
         
         # capture the corresponding XML file for getting the annotations
-        annot_filename = image_name[:-5] + '.xml'
+        annot_filename = image_name[:-5] + '.xml' # len(image_format) en lugar de -5
         annot_file_path = os.path.join(self.dir_path, annot_filename)
         
         boxes = []
@@ -108,8 +108,8 @@ class SellosLatDataset(Dataset):
         return len(self.all_images)
 
 # prepare the final datasets and data loaders
-train_dataset = SellosLatDataset(TRAIN_DIR, RESIZE_TO, RESIZE_TO, CLASSES, get_train_transform())
-valid_dataset = SellosLatDataset(VALID_DIR, RESIZE_TO, RESIZE_TO, CLASSES, get_valid_transform())
+train_dataset = ImagesDataset(TRAIN_DIR, RESIZE_TO, RESIZE_TO, CLASSES, get_train_transform())
+valid_dataset = ImagesDataset(VALID_DIR, RESIZE_TO, RESIZE_TO, CLASSES, get_valid_transform())
 train_loader = DataLoader(
     train_dataset,
     batch_size=BATCH_SIZE,
@@ -132,7 +132,7 @@ print(f"Number of validation samples: {len(valid_dataset)}\n")
 # USAGE: python datasets.py
 if __name__ == '__main__':
     # sanity check of the Dataset pipeline with sample visualization
-    dataset = MicrocontrollerDataset(
+    dataset = ImagesDataset(
         TRAIN_DIR, RESIZE_TO, RESIZE_TO, CLASSES
     )
     print(f"Number of training images: {len(dataset)}")
