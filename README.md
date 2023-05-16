@@ -1,7 +1,10 @@
 # Detección de objetos - RCNN
 Basado en [20211025_Custom_Object_Detection_using_PyTorch_Faster_RCNN](https://debuggercafe.com/custom-object-detection-using-pytorch-faster-rcnn/)
 
-
+## Descarga
+```
+git clone https://github.com/scativa/object_detection_COD
+```
 ## Entorno
 ```
 conda create --name object_detection python=3.10.11
