@@ -31,6 +31,9 @@ Sovit Ranjan Rath October 25, 2021
 
 Sovit Ranjan Rath April 4, 2022 _(no probada)_
 
+### Dataset Microcontroller
+[Microcontroller Detection - Kaggle](https://www.kaggle.com/datasets/tannergi/microcontroller-detection)
+
 ### Desarrollo local
 Versión sellos (depreciated) ```.\Proyectos\20211025_Custom_Object_Detection_using_PyTorch_Faster_RCNN```
 

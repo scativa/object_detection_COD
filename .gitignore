@@ -21,6 +21,7 @@
 /outputs/
 /test_data
 /test_prediction
+/train_data
 
 ####################################
 ### From templates 
