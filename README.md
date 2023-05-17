@@ -1,5 +1,7 @@
 # Detección de objetos - RCNN
 Basado en [20211025_Custom_Object_Detection_using_PyTorch_Faster_RCNN](https://debuggercafe.com/custom-object-detection-using-pytorch-faster-rcnn/)
+Partiendo de la versión adaptada para los sellos (./src-sellos) se comienza a trabajar en el código para los defectos de PPCC.
+Para pruebas propias del proyecto original ver [Custom-Object-Detection-using-PyTorch-Faster-RCNN - github](https://github.com/scativa/Custom-Object-Detection-using-PyTorch-Faster-RCNN)
 
 ## Descarga
 ```
@@ -15,8 +17,8 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## Uses
-Sellos
+## Usos
+Sellos y PPCC
 
 
 ## Notas
@@ -44,6 +46,7 @@ Versión sellos (depreciated) ```.\Proyectos\20211025_Custom_Object_Detection_us
 Versión actual ```.\Proyectos\object_detection_COD```
 
 ### Google Colab Notebook
+A revisar
 - ```Object_Detection.ipynb```
 - ```Object_Detection_SebaCNEA.ipynb```
 
