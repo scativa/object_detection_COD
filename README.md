@@ -27,6 +27,13 @@ Sellos y PPCC
 [CVAT: Computer Vision Annotation Tool – 2023 Guide](https://viso.ai/computer-vision/cvat-computer-vision-annotation-tool/)
 [Image Annotation: Best Software Tools and Solutions in 2023](https://viso.ai/computer-vision/image-annotation/)
 
+### ChatGPT
+[Python Object Detection](https://chat.openai.com/c/177d88af-5879-4829-8c17-474f41b947ab)
+
+[Diff Fast R-CNN Models](https://chat.openai.com/c/bf63f5a2-39fc-414a-8bec-dc9ed112ca16)
+
+[Algoritmos de machine learning](https://chat.openai.com/c/f433f02e-daf3-4637-8a27-49308a5fb1e3)
+
 ### Web
 [Custom Object Detection using PyTorch Faster RCNN](https://debuggercafe.com/custom-object-detection-using-pytorch-faster-rcnn/)
 
